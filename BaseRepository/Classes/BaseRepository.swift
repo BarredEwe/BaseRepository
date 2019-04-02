@@ -3,6 +3,11 @@ import Foundation
 public struct Sorted {
     public var key: String
     public var ascending: Bool = true
+
+    public init(key: String, ascending: Bool = true) {
+        self.key = key
+        self.ascending = ascending
+    }
 }
 
 public protocol BaseRepository: class {
