@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BaseRepository'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BaseRepository.'
+  s.summary          = 'Repository pattern written on swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+If you need to query your model objects from different locations in your code over and over again, a repository can be really helpful to provide a single-entry point to work with your models and remove duplicate query code. You can take it even further and use it with protocols, this way you can easily switch out implementations (for example for unit tests) or you can use it with generics to make a more drum rollgeneric abstraction. In this article I will cover all these cases.
                        DESC
 
   s.homepage         = 'https://github.com/BarredEwe/BaseRepository'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'BarredEwe' => 'grishutin@bifit.com' }
+  s.author           = { 'BarredEwe' => 'barredEwe@gmail.com' }
   s.source           = { :git => 'https://github.com/BarredEwe/BaseRepository.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'BaseRepository/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BaseRepository' => ['BaseRepository/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

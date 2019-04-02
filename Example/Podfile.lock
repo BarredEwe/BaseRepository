@@ -1,0 +1,16 @@
+PODS:
+  - BaseRepository (0.1.0)
+
+DEPENDENCIES:
+  - BaseRepository (from `../`)
+
+EXTERNAL SOURCES:
+  BaseRepository:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaseRepository: 590853f506dbaa63ffc4b090607c4b2aa55291c8
+
+PODFILE CHECKSUM: 9f46c8fe2ffc92989e5c27140981f902563592be
+
+COCOAPODS: 1.6.1
