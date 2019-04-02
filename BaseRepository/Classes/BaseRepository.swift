@@ -1,8 +1,8 @@
 import Foundation
 
 public struct Sorted {
-    var key: String
-    var ascending: Bool = true
+    public var key: String
+    public var ascending: Bool = true
 }
 
 public protocol BaseRepository: class {

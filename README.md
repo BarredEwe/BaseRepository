@@ -22,7 +22,7 @@ pod 'BaseRepository'
 
 ## Author
 
-BarredEwe, grishutin@bifit.com
+BarredEwe, barredEwe@gmail.com
 
 ## License
 
