@@ -45,7 +45,7 @@ public class AnyRepository<EntityType>: BaseRepository {
     let _fetch: (NSPredicate?, Sorted?, (limit: Int, offset: Int)?) -> [EntityType]
     let _fetchAll: () -> [EntityType]
 
-    init<T: BaseRepository>(_ repository: T) {
+    public init<T: BaseRepository>(_ repository: T) {
         _save = repository.save as! (EntityType) throws -> Void
         _saveSeveral = repository.saveSeveral as! ([EntityType]) throws -> Void
         _update = repository.update
