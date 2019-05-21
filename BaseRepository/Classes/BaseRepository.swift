@@ -3,11 +3,16 @@ import Foundation
 public struct Sorted {
     public var key: String
     public var ascending: Bool = true
+}
 
-    public init(key: String, ascending: Bool = true) {
-        self.key = key
-        self.ascending = ascending
-    }
+public protocol Entity {
+    associatedtype ModelEntityType
+    var modelObject: ModelEntityType { get }
+}
+
+public protocol ModelEntity {
+    associatedtype EntityType: Entity
+    var plainObject: EntityType { get }
 }
 
 public protocol BaseRepository: class {
@@ -45,7 +50,7 @@ public class AnyRepository<EntityType>: BaseRepository {
     let _fetch: (NSPredicate?, Sorted?, (limit: Int, offset: Int)?) -> [EntityType]
     let _fetchAll: () -> [EntityType]
 
-    public init<T: BaseRepository>(_ repository: T) {
+    init<T: BaseRepository>(_ repository: T) {
         _save = repository.save as! (EntityType) throws -> Void
         _saveSeveral = repository.saveSeveral as! ([EntityType]) throws -> Void
         _update = repository.update
