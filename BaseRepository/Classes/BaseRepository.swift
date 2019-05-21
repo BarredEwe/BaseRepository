@@ -39,7 +39,7 @@ public protocol BaseRepository: class {
     func fetchAll() -> [EntityType]
 }
 
-// swiftlint:disable identifier_name
+// swiftlint: disable identifier_name
 public class AnyRepository<EntityType>: BaseRepository {
 
     let _save: (EntityType) throws -> Void
