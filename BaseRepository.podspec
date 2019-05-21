@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaseRepository'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Repository pattern written on swift'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ If you need to query your model objects from different locations in your code ov
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'BarredEwe' => 'barredEwe@gmail.com' }
   s.source           = { :git => 'https://github.com/BarredEwe/BaseRepository.git', :tag => s.version.to_s }
-
+  s.swift_version = '4.0'
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'BaseRepository/Classes/**/*'

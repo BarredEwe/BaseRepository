@@ -1,5 +1,5 @@
 PODS:
-  - BaseRepository (0.1.0)
+  - BaseRepository (0.1.5)
 
 DEPENDENCIES:
   - BaseRepository (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaseRepository: 590853f506dbaa63ffc4b090607c4b2aa55291c8
+  BaseRepository: 54477b52d2c1601650c8d49495b0282e6da3d57a
 
-PODFILE CHECKSUM: 9f46c8fe2ffc92989e5c27140981f902563592be
+PODFILE CHECKSUM: 0d69666793048adc7bbd35388509730263343613
 
 COCOAPODS: 1.6.1
